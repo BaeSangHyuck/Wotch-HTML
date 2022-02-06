@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<!--
+	Tactile by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+<title>WOTCH 오늘 뭐볼까?</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+div textarea#term {
+	resize: none;
+}
+
+nav#menu {
+	background-color: rgb(0 0 0/ 65%);
+}
+
+li a#sign {
+	background-color: #ffffff00 !important;
+	border: solid 1px !important;
+}
+
+div#wrap {
+	background-color: rgb(0 0 0/ 65%);
+	opacity: 0.6;
+	border-radius: 0.3em;
+	width: 45%;
+	padding: 15px;
+	margin: 0 auto;
+	opacity: 0.6;
+	border-radius: 0.3em;
+}
+
+div.inner {
+	width: 50%;
+}
+
+div#wrap2 {
+	display: flex;
+}
+
+label {
+	text-align: left;
+	color: #ffffff !important;
+}
+
+input[type="checkbox"]+label {
+	font-size: 0.68em !important;
+	width: 260px;
+}
+
+a#login {
+	background-color: #d50000d9 !important;
+	width: 100% !important;
+	padding: 0px !important;
+	height: 45px !important;
+	font-size: 14px;
+}
+
+a#kakao {
+	background-color: #ffffff !important;
+	color: black !important;
+	width: 100% !important;
+	padding: 0px !important;
+	height: 45px !important;
+	font-size: 14px;
+	position: relative;
+}
+
+ul.actions {
+	display: block;
+	margin: 0;
+}
+
+ul.actions li {
+	padding: 0;
+}
+
+div.check {
+	padding-top: 1em !important;
+}
+
+a.login {
+	background-color: #d50000d9 !important;
+}
+
+@media ( max-width :1443px) {
+	div#wrap {
+		opacity: 0.6;
+		border-radius: 0.3em;
+		width: 40%;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	div.inner {
+		width: 100%;
+	}
+	#banner {
+		background-size: contain
+	}
+}
+
+@media ( max-width :800px) {
+	div#wrap {
+		opacity: 0.6;
+		border-radius: 0.3em;
+		width: 70%;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	div.inner {
+		width: 100%;
+	}
+	#banner {
+		background-size: contain
+	}
+}
+
+@media ( max-width :500px) {
+	div#wrap {
+		opacity: 0.6;
+		border-radius: 0.3em;
+		width: 100%;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	div.inner {
+		width: 100%;
+	}
+	#banner {
+		background-size: contain
+	}
+	a#kakao img {
+		left: 20%;
+	}
+}
+
+a#kakao img {
+	width: 30px;
+	position: absolute;
+	top: 8px;
+	left: 22%;
+}
+
+div.wrap {
+	width: 50%;
+}
+
+div.wrap2 {
+	text-align: right;
+	width: 50%;
+}
+
+div#find {
+	text-align: left;
+}
+
+div.wrap a, div.wrap2 a {
+	font-size: 11px;
+	color: #ffffff !important;
+	text-decoration-line: none;
+	cursor: pointer;
+}
+
+div.wrap {
+	text-align: left;
+}
+
+label[for="term-check"] {
+	display: inline !important;
+}
+
+div.id {
+	text-align: left;
+}
+
+label {
+	margin: 0;
+}
+
+div.id {
+	padding-top: 3em !important;
+}
+
+input[placeholder] {
+	font-size: 14px;
+}
+
+div.pw {
+	padding-top: 1em !important;
+}
+
+section#banner span {
+			font-size: 11px;
+		}
+
+h4 {
+	margin-bottom: 0;
+}
+header h1.tv-title, header h1.movie-title{
+	position: absolute;
+}
+header h1.tv-title{
+	left: 250px !important;
+}
+header h1.movie-title{
+	left: 380px !important;
+}
+header{
+	background-color: rgba(25, 25, 25, 0.99) !important;
+	color: white !important;
+	
+}
+header h1{
+	color: white !important;
+}
+</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<a href="home.html">WOTCH <span id="subtitle">오늘 뭐볼까?</span></a>
+		</h1>
+		<h1 class="tv-title"> <a href="home.html#one" class="scrolly">TV프로그램</a></h1>
+		<h1 class="movie-title"> <a href="home.html#movie" class="scrolly">영화</a></h1>
+		<a href="login.html">Log In</a> <a href="#menu">Menu</a>
+	</header>
+
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="home.html">메인 페이지</a></li>
+			<li><a href="home.html#one" class="scrolly">TV프로그램</a></li>
+			<li><a href="home.html#movie" class="scrolly">영화</a></li>
+		</ul>
+		<ul class="actions stacked">
+			<li><a href="login.html" class="button fit primary" id="login">로그인</a></li>
+			<li><a href="join.html" class="button fit" id="sign">회원가입</a></li>
+		</ul>
+	</nav>
+
+	<section id="banner">
+		<div class="inner">
+			<div id="wrap">
+				<h4>OTT의 즐거움이 배가된다!</h4>
+				<h2>WOTCH</h2>
+				<form method="post" action="#">
+					<div class="row gtr-uniform">
+						<div class="col-12 id">
+							<input type="email" name="email" id="email" value=""
+								placeholder="구글이메일, 아이디, 전화번호 " /> <span>TIP 구글계정이 있다면
+								아이디만 입력해 보세요.</span>
+						</div>
+						<div class="col-12 pw">
+							<input type="password" name="password" id="password"
+								placeholder="비밀번호" />
+							<div id="find">
+								<div class="wrap">
+									<input type="checkbox" id="term-check" name="term-check">
+									<label for="term-check">로그인 상태 유지</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-12-small check"></div>
+					</div>
+
+					<div class="col-12">
+						<ul class="actions">
+							<li><a href="home.html" class="button primary" id="login">로그인</a></li>
+							<span>━━━━━━━━ 또는 ━━━━━━━━</span>
+						</ul>
+						<ul class="actions">
+							<li><a href="home.html" class="button primary" id="kakao"
+								style="color: black !important;"><img
+									src="images/google.jpg">구글계정으로 로그인</a></li>
+						</ul>
+					</div>
+					<div id="wrap2">
+						<div class="wrap">
+							<a href="join.html">회원가입</a>
+						</div>
+						<div class="wrap2">
+							<a href="findId.html">아이디찾기</a><span>/</span><a
+								href="findPw.html">비밀번호찾기</a>
+						</div>
+					</div>
+			</div>
+			</form>
+		</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

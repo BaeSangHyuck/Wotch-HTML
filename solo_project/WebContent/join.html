@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<!--
+	Tactile by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+	<title>WOTCH 오늘 뭐볼까?</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+		label.info {
+			width: 100% !important;
+			padding-right: 0 !important;
+			margin: 0;
+		}
+
+		input#email {
+			margin-bottom: 15px;
+		}
+
+		ul#info {
+			list-style: none;
+			padding: 0;
+		}
+
+		ul#info li {
+			padding: 0;
+		}
+
+		div textarea#term {
+			resize: none;
+		}
+
+		div.col-12.id,
+		div.col-12.pw {
+			text-align: left;
+		}
+
+		div.col-12 span {
+			font-size: 12px;
+		}
+
+		div.pw {
+			padding-top: 10px !important;
+		}
+
+		div.inner {
+			width: 50%;
+		}
+
+		nav#menu {
+			background-color: rgb(0 0 0/ 65%);
+		}
+
+		li a#sign {
+			background-color: #ffffff00 !important;
+			border: solid 1px !important;
+		}
+
+		div#wrap {
+			background-color: rgb(0 0 0/ 65%);
+			opacity: 0.6;
+			border-radius: 0.3em;
+			width: 45%;
+			padding: 15px;
+			margin: 0 auto;
+			opacity: 0.6;
+			border-radius: 0.3em;
+		}
+
+		a#kakao {
+			background-color: #ffffff !important;
+			color: black !important;
+			width: 100% !important;
+			padding: 0px !important;
+			height: 45px !important;
+			font-size: 14px;
+			position: relative;
+		}
+
+		a#kakao img {
+			width: 30px;
+			position: absolute;
+			top: 8px;
+			left: 22%;
+		}
+
+		input[placeholder] {
+			font-size: 14px;
+		}
+
+		textarea {
+			font-size: 14px;
+		}
+
+		label {
+			text-align: left;
+			color: #ffffff !important;
+		}
+
+		input[type="checkbox"]+label {
+			font-size: 0.68em !important;
+			width: 260px;
+		}
+
+		a#finish {
+			background-color: #d50000d9 !important;
+			width: 100% !important;
+			padding: 0px !important;
+			height: 45px !important;
+			font-size: 14px;
+		}
+
+		ul.actions {
+			display: block;
+			margin: 0;
+		}
+
+		div.check {
+			text-align: left;
+		}
+
+		a.login {
+			background-color: #d50000d9 !important;
+		}
+
+		h4 {
+			margin-bottom: 2em;
+			font-size: 15px;
+			color: #cbcbcb;
+		}
+
+		ul.actions li {
+			padding: 0;
+		}
+
+		h2 {
+			padding-top: 1em;
+		}
+
+		section#banner span {
+			font-size: 11px;
+		}
+
+		@media (max-width :500px) {
+			div#wrap {
+				border-radius: 0.3em;
+				width: 95%;
+				padding: 15px;
+				margin: 0 auto;
+			}
+
+			div.inner {
+				width: 100%;
+			}
+
+			#banner {
+				background-size: contain
+			}
+		}
+
+		textarea {
+			display: none;
+		}
+		header h1.tv-title, header h1.movie-title{
+	position: absolute;
+}
+header h1.tv-title{
+	left: 250px !important;
+}
+header h1.movie-title{
+	left: 380px !important;
+}
+
+#menu .button.primary{
+	background-color: #d50000d9 !important;
+}
+header{
+	background-color: rgba(25, 25, 25, 0.99) !important;
+	color: white !important;
+	
+}
+header h1{
+	color: white !important;
+}
+</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<a href="home.html">WOTCH <span id="subtitle">오늘 뭐볼까?</span></a>
+		</h1>
+		<h1 class="tv-title"> <a href="#one" class="scrolly">TV프로그램</a></h1>
+		<h1 class="movie-title"> <a href="#movie" class="scrolly">영화</a></h1>
+		<a href="login.html">Log In</a> <a href="#menu">Menu</a>
+	</header>
+
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="home.html">메인 페이지</a></li>
+			<li><a href="home.html#one" class="scrolly">TV프로그램</a></li>
+			<li><a href="home.html#movie" class="scrolly">영화</a></li>
+		</ul>
+		<ul class="actions stacked">
+			<li><a href="login.html" class="button fit primary" id="login">로그인</a></li>
+			<li><a href="join.html" class="button fit" id="sign">회원가입</a></li>
+		</ul>
+	</nav>
+
+	<section id="banner">
+
+		<div class="inner">
+			<div id="wrap">
+				<h3>OTT의 가입을 시작합니다!</h3>
+				<h4>
+					구글계정 하나로<br>다양한 서비스를 편리하게 이용해 보세요!
+				</h4>
+				<form method="post" action="#">
+					<div class="row gtr-uniform">
+						<div class="col-12 id">
+							<input type="text" name="id" id="id" value="" placeholder="아이디" />
+							<span>영문 또는 영문, 숫자 조합 6~12 자리</span>
+						</div>
+						<div class="col-12 pw">
+							<input type="password" name="password" id="password" placeholder="비밀번호" /> <span>영문, 숫자,
+								특수문자(~!@#$%^&*) 조합
+								8~15 자리</span>
+						</div>
+						<div class="col-12 pw">
+							<input type="password" name="password" id="password" placeholder="비밀번호 확인" />
+						</div>
+						<div class="col-12 pw">
+							<input type="email" name="email" id="email" value="" placeholder="이메일" />
+						</div>
+					</div>
+					<ul id="info">
+						<li><input type="checkbox" id="agecheck" name="infocheck">
+							<label class="info" for="agecheck"> <span> 만 14세
+									이상입니다. </span>
+							</label>
+						</li>
+						<li><input type="checkbox" id="acheck" name="acheck">
+							<label class="info" for="acheck"> <span> [필수]서비스
+									이용약관 동의 </span>
+							</label>
+						</li>
+						<li><input type="checkbox" id="bcheck" name="bcheck">
+							<label class="info" for="bcheck"> <span> [필수]개인정보
+									수집 및 서비스 활용 동의 </span>
+							</label>
+						</li>
+						<li><input type="checkbox" id="ccheck" name="ccheck">
+							<label class="info" for="ccheck"> <span> [필수]채널
+									홈페이지 개인정보 제 3자 제공동의 </span>
+							</label>
+						</li>
+
+					</ul>
+					</li>
+					</ul>
+				</form>
+				<div class="col-12">
+					<ul class="actions">
+						<li><a href="home.html" class="button primary" id="finish">가입하기</a></li>
+						<span>━━━━━━━━ 또는 ━━━━━━━━</span>
+					</ul>
+					<ul class="actions">
+						<li><a href="home.html" class="button primary" id="kakao" style="color: black !important;"><img
+									src="images/google.jpg">구글계정으로
+								로그인</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

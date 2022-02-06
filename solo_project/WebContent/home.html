@@ -1,0 +1,1153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>WOTCH 오늘 뭐볼까?</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap"
+	rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap"
+	rel="stylesheet">
+<style>
+
+body{
+	background-color: black;
+}
+
+a#login {
+	background-color: #d50000d9 !important;
+}
+
+@media ( max-width :500px) {
+	#banner {
+		background-size: contain
+	}
+}
+
+img#down {
+	width: 100px;
+}
+
+div.inner {
+	position: relative;
+}
+
+sup {
+	position: absolute;
+	right: 35px;
+	top: -15px;
+}
+
+div.content a img {
+	border-radius: 0.25em;
+}
+
+span#subtitle {
+	font-weight: bold;
+}
+
+nav#menu {
+	background-color: rgb(0 0 0/ 65%);
+}
+
+li a#sign {
+	background-color: #ffffff00 !important;
+	border: solid 1px !important;
+}
+
+ul.ul-content li.content-wrap {
+	width: 19%;
+}
+
+li.content-wrap {
+	width: 15%;
+}
+
+ul#content-wrap li.banner{
+	width: 100%;
+}
+
+ul#content-wrap {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+ul.ul-content.event {
+	margin-bottom: 0 !important;
+}
+
+div.content img {
+	width: 100%;
+}
+
+section#one {
+	background: black;
+}
+
+div.title, div.title2 {
+	width: 100%;
+	text-align: left;
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-left: 1em;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+ul a {
+	text-decoration: none;
+	color: white !important;
+	font-size: 18px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#banner {
+	background-attachment: scroll;
+}
+
+div.content {
+	transition: all 0.2s linear;
+}
+
+div.content:hover {
+	transform: scale(1.1);
+}
+
+li#black {
+	color: black;
+}
+
+header h1.tv-title, header h1.movie-title{
+	position: absolute;
+}
+header h1.tv-title{
+	left: 250px !important;
+}
+header h1.movie-title{
+	left: 380px !important;
+}
+
+section#one{
+	transform: scale(0.9); 
+}
+
+header div{
+	display: inline-block;
+}
+
+
+header{
+	background-color: rgba(25, 25, 25, 0.99) !important;
+	color: white !important;
+	
+}
+#header{
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+button.search{
+	background-image: url("https://www.tving.com/img/icon_search.svg");
+	background-size: contain;
+	border: none;
+	position: absolute;
+    right: 205px;
+    top: 10px;
+    background-repeat: no-repeat;
+	height: 2.5em !important;
+	
+}
+div#search-wrap{
+	width: 100%;
+	max-height: 100%;
+    background-color: rgba(25, 25, 25, 0.99);
+    box-shadow: rgb(0 0 0 / 50%) 0px 5px 10px 0px;
+    overflow: hidden;
+	position: fixed;
+	padding: 77px 185px 66px;
+	z-index: 2;
+	display: none;
+}
+div#search label{
+	border: none;
+	border-bottom: 2px solid #fff;;
+
+}
+div#search{
+	margin-bottom: 100px;
+}
+
+#search input{
+	border: none;
+	background-color: rgba(25, 25, 25, 0.99);
+	font-size: 2em;
+	padding-left: 0;
+	height: 2em;
+	
+}
+input#search__input::placeholder{
+	color: #5c5c5c00;
+	font-family: 'Noto Sans KR', sans-serif;
+	opacity: 0.3;
+}
+input#search__input{
+	color: #fff;
+	font-family: 'Noto Sans KR', sans-serif;
+	opacity: 1;
+}
+div#flex-wrap{
+	display: flex;
+	color:#dedede;
+	font-weight: 550;
+	letter-spacing: -1px;
+}
+div.search-title{
+	color: #dedede;
+    line-height: normal;
+    font-size: 25px;
+
+	margin-bottom: 22px;
+}
+div#recent div:last-child{
+	margin: 0.75rem 0;
+    font-size: 20px;
+	font-weight: 450;
+    color: rgba(222,222,222,.7);
+    -webkit-transition: color .1s;
+    transition: color .1s;
+    line-height: 1.5;
+}
+div#recent{
+	border-right: 1px solid #2e2e2e;
+	width: 50%;
+}
+div#rank{
+	padding-left: 3.35em;
+	width: 50%;
+}
+div#rank div.search-title{
+	margin-bottom: 26px;
+}
+ul#ranking-list li{
+	padding-left: 0 !important;
+	width: 100%;
+}
+ul#ranking-list{
+	list-style: none !important;
+}
+button.ranking{
+	display: flex;
+	width: 38%;
+	-webkit-box-align: center;
+    align-items: center;
+	padding: 0;
+	border: none;
+	font-family: 'Noto Sans KR, sans-serif'
+}
+button.ranking h3{
+	margin-bottom: 0 !important;
+	cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+	color: rgb(163, 163, 163) !important;
+	letter-spacing: -1px;
+}
+button.ranking span{
+	text-align: left;
+	width: 39px;
+	font-size: 20px;
+	color: rgb(255, 21, 60);;
+	font-weight: 400;
+	display: inline-block;
+}
+
+ul#ranking-list{
+	padding: 0;
+}
+li span#time{
+	display: inline-block;
+    line-height: 1.91;
+    text-align: left;
+    margin-top: 11px;
+    color: rgb(100, 100, 100);
+	font-size: 20px;
+    font-weight: 400;
+	letter-spacing: -1.2px;
+	font-family: 'Noto Sans KR, sans-serif'
+}
+div#search button{
+	position: absolute;
+	top: 95px;
+    right: 185px;
+    background-size: 80%;
+}
+section.container {
+    margin: 0 auto;
+    width: 99vw;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+}
+
+div.banner {
+    width: 500vw;
+    transition: transform 0.5s; /* transform 동작 시 애니메이션 효과 0.5초 */
+}
+
+div.img {
+    width: 100vw;
+    float: left;
+	position: relative;
+}
+
+div.btns{
+    position: absolute;
+    bottom: 150px;
+    left: 80px;
+}
+
+.btns button{
+    border-radius: 1em;
+    border: none;
+    background-color: gray;
+	padding: 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+div.arrow {
+    position: absolute;
+    width: 35px;
+    background: rgba(255, 255, 255, 0);
+    height: 100%;
+    line-height: 45vh;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.329);
+    z-index: 1;
+    cursor: pointer;
+}
+
+div.next {
+	right: 0;
+}
+div p.banner_text{
+    position: absolute;
+    bottom: 160px;
+    left: 80px;
+	font-family: 'Noto Sans KR', sans-serif;
+	width: 100%;
+    opacity: 0.87;
+    font-size: 1.5rem;
+    line-height: 1.44;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+div h1.banner_text{
+	position: absolute;
+    bottom: 250px;
+    left: 80px;
+    font-size: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: rgb(255, 255, 255);
+}
+div a.banner_btns{
+	color: #ffffff;
+    background-color: rgb(255 255 255 / 0%);
+    text-decoration-line: none;
+    width: 10%;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,.7);
+    backdrop-filter: blur(30px);
+    display: inline-block;
+	position: absolute;
+	padding: 1em 2.8em;
+	bottom: 175px;
+	right: 80px;
+}
+div.prev img{
+	position: absolute;
+    left: 0;
+    top: 45%;
+}
+
+div.next img{
+	position: absolute;
+    right: 0;
+    top: 45%;
+}
+div#img1{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0)),url("https://image.tving.com/upload/fe/highlight/2022/0122/20220122221807banner_image_url_u.jpg/dims/resize/F_webp,1920");
+	background-size: cover;
+	height: 855px;
+}
+div#img2{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0)),url("https://image.tving.com/upload/fe/highlight/2022/0205/20220205092329banner_image_url_u.jpg/dims/resize/F_webp,1920");
+    background-size: cover;
+    height: 855px;
+}
+div#img3{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0)),url("https://image.tving.com/upload/fe/highlight/2022/0205/20220205092002banner_image_url_u.jpg/dims/resize/F_webp,1920");
+    background-size: cover;
+    height: 855px;
+}
+div#img4{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0)),url("https://image.tving.com/upload/fe/highlight/2022/0124/20220124111049banner_image_url_u.jpeg/dims/resize/F_webp,1920");
+    background-size: cover;
+    height: 855px;
+}
+div#img5{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0)),url("https://image.tving.com/upload/fe/highlight/2022/0129/20220129100409banner_image_url_u.jpg/dims/resize/F_webp,1920");
+    background-size: cover;
+    height: 855px;
+}
+
+</style>
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<a href="home.html">WOTCH <span id="subtitle">오늘 뭐볼까?</span></a>
+		</h1>
+		<h1 class="tv-title"> <a href="#one" class="scrolly">TV프로그램</a></h1>
+		<h1 class="movie-title"> <a href="#movie" class="scrolly">영화</a></h1>
+		<button type="button" class="search" ></button>
+		
+		<a href="login.html">Log In</a> <a href="#menu">Menu</a>
+	</header>
+	
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="home.html">메인 페이지</a></li>
+			<li><a href="#one" class="scrolly">TV프로그램</a></li>
+			<li><a href="#movie" class="scrolly">영화</a></li>
+		</ul>
+		<ul class="actions stacked">
+			<li><a href="login.html" class="button fit primary" id="login">로그인</a></li>
+			<li><a href="join.html" class="button fit" id="sign">회원가입</a></li>
+		</ul>
+	</nav>
+	
+	<div id="search-wrap">
+		<div id='search'>
+			<label class="search__input" for="search__input">
+				<input id="search__input" type="text" placeholder="TV프로그램, 영화 제목 및 출연진으로 검색해보세요" autocomplete="off" ;>
+				<button type="button" class="search"></button>
+			</label>
+		</div>
+		<div id="flex-wrap">
+			<div id="recent">
+				<div class="search-title">최근 검색내역</div>
+				<div>검색 내역이 없습니다.</div>
+			</div>
+			<div id='rank'>
+				<ul id="ranking-list">
+					<div class="search-title">실시간 인기 검색어</div>
+					<li >
+						<button class="ranking" onclick="location.href='http:\/\/www.tving.com/contents/P001492081'">
+							<span>1</span>
+							<h3>나는 SOLO</h3>			
+						</button>
+						</li>
+						<li >
+							<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P001541087'">
+								<span>2</span>
+							<h3>귀멸의 칼날:환락의 거리편</h3>
+						</button>
+					</li>
+					<li >
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P001556919'">
+							<span>3</span>
+							<h3>해치지않아X스우파</h3>
+						</button>
+					</li>
+					<li>
+						<button class="ranking" onclick="location.href='http:\/\/www.tving.com/contents/P001492081'">
+							<span>4</span>
+							<h3>술꾼도시여자들</h3>
+						</button>
+					</li>
+					<li>
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/M000364801'">
+							<span>5</span>
+							<h3>명탐정 코난 : 비색의 탄환</h3>
+							
+						</button>
+					</li>
+					<li>
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P000643144'">
+							
+							<span>6</span>
+							
+							<h3>유 퀴즈 온 더 블럭</h3>
+							
+						</button>
+					</li>
+					<li>
+						<button class="ranking " onclick="location.href='https:\/\/www.tving.com/contents/P001541095'">
+							
+							<span>7</span>
+							
+							<h3>공작도시</h3>
+							
+						</button>
+					</li>
+					<li >
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P001548235'">
+							
+							<span>8</span>
+							
+							<h3>고스트 닥터</h3>
+							
+						</button>
+					</li>
+					<li >
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P001337958'">
+							
+							<span>9</span>
+							
+							<h3>신서유기 8</h3>
+							
+						</button>
+					</li>
+					<li >
+						<button class="ranking" onclick="location.href='https:\/\/www.tving.com/contents/P001541093'">
+							
+							<span>10</span>
+							
+							<h3>싱어게인2</h3>
+							
+						</button>
+						<span id="time"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+		<!-- Banner -->
+		<section class="container">
+			<div class="arrow prev"><img src="https://www.tving.com/img/icon_slide_left.svg" ></div>
+			<!-- 이미지를 담을 레이아웃 -->
+			<div class="banner">
+				<div class="img" id='img1'>
+					<div>
+						<p class="banner_text">죽일 수도, 죽을 수도 없는 600년의 저주 그리고 인연</p>
+					</div>
+					<div>
+						<a target="_self" class="banner_btns" href="https://www.tving.com/contents/P001543232"><span>자세히보기</span></a>
+					</div>
+				</div>
+				<div class="img" id='img2'>
+					<div>
+						<p class="banner_text">서로 다른 시대 하나의 살인사건 반드시 그녀를 구해야한다</p>
+					</div>
+					<div>
+						<a target="_self" class="banner_btns" href="https://www.tving.com/contents/M000133245"><span>자세히보기</span></a>
+					</div>
+				</div>
+				<div class="img" id='img3'>
+					<div>
+						<p class="banner_text">비정규직 해고 노동자들의 이야기 #지현우 #안내상</p>
+					</div>
+					<div>
+						<a target="_self" class="banner_btns" href="https://www.tving.com/contents/P000200445"><span>자세히보기</span></a>
+					</div>
+				</div>
+				<div class="img" id='img4'>
+					<div>
+						<h1 class="banner_text">어느새 한 그릇 뚝딱!<br>🍚내 밥친구를 소개합니다</h1>
+						<p class="banner_text">짧아서 후루룩 보기 좋은 #짱구 #고독한미식가 #술도녀</p>
+					</div>
+					<div>
+						<a target="_self" class="banner_btns" href="https://www.tving.com/contents/P001518829"><span>자세히보기</span></a>
+					</div>
+				</div>
+					<div class="img" id='img5'>
+					<div>
+						<p class="banner_text">“언니 서울 왔다!” 이효리의 소울-풀 서울 스토리!</p>
+					</div>
+					<div>
+						<a target="_self" class="banner_btns" href="https://www.tving.com/contents/P001557780"><span>자세히보기</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="arrow next"><img src="https://www.tving.com/img/icon_slide_right.svg"></div>
+			<!-- 화면을 변경시킬 버튼들을 담은 레이아웃 -->
+			<div class="btns">
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+			</div>
+		</section>
+	
+	
+	
+	<section id="one" class="wrapper alt style2">
+		<div class="title">WOTCH에서 꼭 봐야하는 컨텐츠</div>
+		<ul id="content-wrap">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001557780"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001557780.jpg/dims/resize/400">
+						<div>서울체크인</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001551277"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001551277.jpg/dims/resize/400">
+						<div>ALIVE(얼라이브)</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001551927"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001551927.jpg/dims/resize/400">
+						<div>내과박원장</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001537909"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001537909.jpg/dims/resize/400">
+						<div>여고추리반2</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001532283"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001532283.jpg/dims/resize/400">
+						<div>스트릿우먼파이터 ON THE STAGE</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P000515167"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P000515167.jpg/dims/resize/400">
+						<div>놀라운 토요일</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="title">최신 에피소드</div>
+		<ul id="content-wrap">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001557302"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001557302.jpg/dims/resize/400">
+						<div>너의 목소리가 보여9</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001557362"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001557362.jpg/dims/resize/400">
+						<div>아트싱어</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P000218912"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P000218912.jpg/dims/resize/F_webp,400">
+						<div>아는 형님</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P000515167"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P000515167.jpg/dims/resize/400">
+						<div>놀라운 토요일</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001557299"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001557299.jpg/dims/resize/F_webp,400">
+						<div>명탐정코난2022</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001557361"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001557361.jpg/dims/resize/F_webp,400">
+						<div>인생을 담다 명인</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="title2">Quick VOD</div>
+		<ul id="content-wrap" class="ul-content">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/E003675745"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP1500/P001557302.jpg/dims/resize/F_webp,400">
+						<div>너의 목소리가 보여9</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/E002963921"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP1500/P001152940.jpg/dims/resize/F_webp,400">
+						<div>JTBC 뉴스룸</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/player/C49742"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0200/P001052050.png/dims/resize/F_webp,400">
+						<div>신서유기 레전드</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/player/C06762"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0200/P000205285.jpg/dims/resize/F_webp,400">
+						<div>응답하라1988</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/player/C36741"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0200/P000887459.png/dims/resize/F_webp,400">
+						<div>강식당 2</div>
+					</a>
+				</div>
+			</li>
+
+		</ul>
+		<div class="title">인생 애이메이션을 찾아서</div>
+		<ul id="content-wrap">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001541087"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001541087.jpg/dims/resize/F_webp,400">
+						<div>귀멸의 칼날: 환락의 거리편</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001480723"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001480723.jpg/dims/resize/F_webp,400">
+						<div>베르샤유의 장미</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001533959"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001533959.jpg/dims/resize/F_webp,400">
+						<div>신비아파트 특별판</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001501766"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001501766.jpg/dims/resize/F_webp,400">
+						<div>짱구는못말려21</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001509610"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001509610.jpg/dims/resize/F_webp,400">
+						<div>명탐정코난19기</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/P001512260"> <img
+						src="https://image.tving.com/upload/cms/caip/CAIP0900/P001512260.jpg/dims/resize/F_webp,400">
+						<div>빨간망토 챠챠</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<ul id="content-wrap" class="ul-content">
+			<li class="content-wrap banner">
+				<div class="content">
+					<a href="https://image.tving.com/upload/fe/highlight/2022/0120/20220120024113banner_image_url_u.jpg/dims/resize/F_webp,-1"> 
+						<img src="https://image.tving.com/upload/fe/highlight/2022/0120/20220120024113banner_image_url_u.jpg/dims/resize/F_webp,-1">
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="title" id="movie">#액션 #한국영화</div>
+		<ul id="content-wrap">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000147056"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000147056.jpg/dims/resize/F_webp,400">
+						<div>공조</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000364038"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000364038.jpg/dims/resize/F_webp,400">
+						<div>모가디슈</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000256733"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000256733.jpeg/dims/resize/F_webp,400">
+						<div>나쁜녀석들 - 더무비</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000275133"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000275133.jpg/dims/resize/F_webp,400">
+						<div>도둑들</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000273636"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000273636.jpg/dims/resize/F_webp,400">
+						<div>뺑반</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000362483"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000362483.jpg/dims/resize/F_webp,400">
+						<div>밀정</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="title">매력의 끝이 어디야? 이정재</div>
+		<ul id="content-wrap">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000314736"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000314736.jpg/dims/resize/F_webp,400">
+						<div>신과함께 - 인과연</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000305842"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000305842.jpg/dims/resize/F_webp,400">
+						<div>신과함께 - 죄와벌</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000331333"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000331333.jpg/dims/resize/F_webp,400">
+						<div>다만 악에서 구하소서</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000250534"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000250534.jpg/dims/resize/F_webp,400">
+						<div>빅매치</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000225933"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000225933.jpg/dims/resize/F_webp,400">
+						<div>사바하</div>
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/contents/M000293333"> <img
+						src="https://image.tving.com/upload/cms/caim/CAIM2100/M000293333.jpg/dims/resize/F_webp,400">
+						<div>암살</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="title2">이벤트</div>
+		<ul id="content-wrap" class="ul-content event">
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/list/theme/untactshow"> <img
+						src="https://image.tving.com/upload/fe/event/2022/0128/20220128150616list_image_upload.jpg/dims/resize/F_webp,0">
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://www.tving.com/list/theme/Tvingo_01"> <img
+						src="https://image.tving.com/upload/fe/event/2022/0127/20220127194921list_image_upload.jpeg/dims/resize/F_webp,0">
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://mkt.tving.com/2022afcw/index.html"> <img
+						src="https://image.tving.com/upload/fe/event/2022/0121/20220121153908list_image_upload.jpg/dims/resize/F_webp,0">
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a
+						href="https://www.tving.com/list/theme/lunarnewyear?utm_source=pc_event_list&utm_medium=tving_banner&utm_campaign=newyearevent">
+						<img
+						src="https://image.tving.com/upload/fe/event/2022/0127/20220127145945list_image_upload.jpg/dims/resize/F_webp,0">
+					</a>
+				</div>
+			</li>
+			<li class="content-wrap">
+				<div class="content">
+					<a href="https://mall.tving.com/goods/program/0202"> <img
+						src="https://image.tving.com/upload/fe/event/2022/0127/20220127150639list_image_upload.jpg/dims/resize/F_webp,0">
+					</a>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<!-- Two -->
+	<!-- <section id="two" class="wrapper alt">
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://www.netflix.com/" target="_blank"> <img
+					src="images/netflix.jpg" />
+				</a>
+			</div>
+			<div class="content">
+				<h3 class="major">NETFLIX</h3>
+				<p>
+					넷플릭스(영어: Netflix, Inc.)는 '인터넷(Net)'과 '영화(Flicks)'를 합성한 이름으로 전 세계
+					190개국 이상의, 2.1억 명의 회원을 보유한 스트리밍 엔터테인먼트 기업으로서 영화와 드라마, TV 프로그램,
+					다큐멘터리, 애니메이션 등의 매우 다양한 장르의 컨텐츠들을 언제, 어디서나, 무제한으로 모든 기기에서 볼 수 있는
+					플랫폼이다. <br> <a href="https://www.netflix.com/">넷플릭스 바로가기</a>
+				</p>
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://www.tving.com/" target="_blank"> <img
+					src="images/pic02.png" src="https://www.tving.com/" />
+				</a>
+			</div>
+			<div class="content">
+				<h3 class="major">TVING</h3>
+				<p>
+					TVING은 200여개의 라이브 채널 및 5만 여편의 VOD를 PC와 스마트폰, 태블릿 PC 등 모든 모바일 스마트기기,
+					그리고 스마트 TV에서 FHD급 고화질로 시청할 수 있는 동영상 서비스이다. 매번 새롭게 제공되는 다양한 카테고리의
+					전용관 서비스를 제공하고 있으며 SNS 연동을 통해 동영상을 지인들과 공유할 수 있다. <br> <a
+						href="https://www.tving.com/">티빙 바로가기</a>
+				</p>
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://www.disneyplus.com/ko-kr" target="_blank"> <img
+					src="images/disney.jpg" src="https://www.disneyplus.com/ko-kr" />
+				</a>
+			</div>
+			<div class="content">
+				<h3 class="major">DISNEY +</h3>
+				<p>
+					디즈니+(영어: Disney+)는 월트 디즈니 컴퍼니의 미디어와 엔터테인먼트 배급 부서가 운영하는 구독형 OTT
+					서비스다. 2019년 11월 12일 미국과 캐나다, 네덜란드에서 정식 출시되었다. 디즈니플러스의 오리지널 작품과 월트
+					디즈니 스튜디오와 월트 디즈니 텔레비전, 픽사, 스타워즈, 내셔널 지오그래픽, 20세기 스튜디오, 스타 작품을 배급 및
+					공개했다.[1] 2021년 11월 17일 기준 전 세계 중 58개국에서 서비스가 제공되고 있다. <br> <a
+						href="https://www.disneyplus.com/ko-kr">디즈니플러스 바로가기</a>
+				</p>
+			</div>
+		</section>
+	</section> -->
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<section class="about">
+				<h4 class="major">WOTCH</h4>
+				<p>WOTCH는 Watching Of Today Channel의 줄임말로 집밖을 나가기 힘든 코로나 시국에 집에서
+					OTT채널을 자주보는 클라이언트들에게 보고싶은 컨텐츠가 어느 OTT플랫폼에 있는지 찾아주고, 컨텐츠를 추천해주는 등
+					무료한 시간들을 달래줄 수 있도록 도와주는 서비스입니다.</p>
+			</section>
+			<section class="contact-info">
+				<h4 class="major">Get in Touch</h4>
+				<ul class="contact">
+					<li class="icon solid fa-phone"><a href='tel:01040625261'>(010) 4062-5261</a></li>
+					<li class="icon solid fa-envelope"><a href='mailto:tkdgur961024@gmail.com"'>tkdgur961024@gmail.com</a></li>
+					<li class="icon brands fa-instagram"><a href="https://www.instagram.com/b_s_h96/">B_S_H96</a></li>
+					<li id="black">.</li>
+				</ul>
+
+			</section>
+		</div>
+		<div class="copyright">
+			<p>&copy; WOTCH Corp. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+<script>
+	const click = document.querySelector('button.search');
+	const display = document.getElementById('search-wrap');
+	const close = document.querySelector('div#search button.search');
+	const input = document.getElementById('search__input');
+	const time = document.querySelector('span#time');
+	const arrow = document.querySelectorAll('div.arrow')
+	const img = document.querySelectorAll('div.arrow img')
+	
+	click.addEventListener("click",function(){
+		var now = new Date();
+		time.innerHTML=now.toLocaleString()+" 기준";
+	if(display.style.display=='none' || !display.style.display){
+		display.style.display='block';
+		click.style.backgroundImage='url("https://www.tving.com/img/x.svg")'
+	}else if(display.style.display=='block'){
+		display.style.display='none';
+		click.style.backgroundImage='url("https://www.tving.com/img/icon_search.svg")'
+	}
+})
+
+	arrow[0].addEventListener("mouseover",function(){
+		img[0].style.transform='scale(1.3)';
+		img[0].style.transition='transform 0.2s';
+	})
+	arrow[1].addEventListener("mouseover",function(){
+		img[1].style.transform='scale(1.3)';
+		img[1].style.transition='transform 0.2s';
+	})
+	arrow[0].addEventListener("mouseout",function(){
+		img[0].style.transform='scale(1)';
+		img[0].style.transition='transform 0.2s';
+	})
+	arrow[1].addEventListener("mouseout",function(){
+		img[1].style.transform='scale(1)';
+		img[1].style.transition='transform 0.2s';
+	})
+	
+	close.addEventListener("click",function(){
+			display.style.display='none';
+			click.style.backgroundImage='url("https://www.tving.com/img/icon_search.svg")'
+	})
+
+	    input.onblur = function(){
+		if(this.value){
+            this.value=''
+        }
+    }
+    //화면을 넘길 버튼을 가져온다
+    const btns = document.querySelectorAll("button.btn");
+    //버튼을 눌렀을 때 변경시킬 화면을 가져온다.
+    const banner = document.querySelector("div.banner");
+    const arrows = document.querySelectorAll("div.arrow");
+    var count = 0;
+	
+    btns.forEach(function(value, index, ar){
+		ar[index].addEventListener("click", function(){
+			count = index;
+            banner.style.transform = "translate(-" + count * 100 + "vw)";
+			btns[count].style.backgroundColor='white';
+			for(let i=0;i<5;i++){
+				if(count!=i){
+					btns[i].style.backgroundColor='gray';
+				}
+			}
+        })
+    });
+
+    //이전, 다음 버튼 클릭 시 알맞는 배너로 이동
+    arrows.forEach((arrow) => {
+        arrow.addEventListener("click", function(){
+            let arrowType = arrow.classList[1];
+            if(arrowType == 'prev' && count != 0){
+                count--;
+ 
+            }else if(arrowType == 'next' && count != btns.length - 1){
+                count++;
+                
+            }else {
+                if(count == btns.length - 1){
+                    count = 0;
+                }else{
+                    count = 4;
+                }
+            }
+            banner.style.transform = "translate(-" + count * 100 + "vw)";
+			btns[count].style.backgroundColor='white';
+			for(let i=0;i<5;i++){
+				if(count!=i){
+					btns[i].style.backgroundColor='gray';
+				}
+			}
+        });
+    });
+    setInterval(function(){
+        count++;
+        count=count==5?0:count;
+        banner.style.transform = "translate(-" + count * 100 + "vw)";
+		btns[count].style.backgroundColor='white'
+		for(let i=0;i<5;i++){
+				if(count!=i){
+					btns[i].style.backgroundColor='gray';
+				}
+			}
+	},7000);
+</script>
+</html>

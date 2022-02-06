@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Tactile by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+<title>WOTCH 오늘 뭐볼까?</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+div textarea#term {
+	resize: none;
+}
+
+nav#menu {
+	background-color: rgb(0 0 0 / 65%);
+}
+
+div#wrap {
+	background-color: rgb(0 0 0 / 65%);
+	opacity: 0.6;
+	border-radius: 0.3em;
+	width: 40%;
+	padding: 15px;
+	margin: 0 auto;
+	opacity: 0.6;
+	border-radius: 0.3em;
+}
+
+label {
+	text-align: left;
+	color: #ffffff !important;
+}
+
+div#inner {
+	width: 50%;
+}
+
+input[type="checkbox"]+label {
+	font-size: 0.68em !important;
+	width: 260px;
+}
+
+a#login {
+	background-color: #d50000d9 !important;
+	width: 100% !important;
+	padding: 0px !important;
+	height: 45px !important;
+	font-size: 14px;
+}
+
+ul.actions {
+	margin: 0;
+	width: 100%;
+	display: block;
+}
+header{
+	background-color: rgba(25, 25, 25, 0.99) !important;
+	color: white !important;
+	
+}
+header h1{
+	color: white !important;
+}
+div.check {
+	padding-top: 1em !important;
+}
+
+a.login {
+	background-color: #d50000d9 !important;
+}
+
+li a#sign {
+	background-color: #ffffff00 !important;
+	border: solid 1px !important;
+}
+
+li a#sign {
+	background-color: #ffffff00 !important;
+	border: solid 1px !important;
+}
+@media ( max-width :500px) {
+	div#wrap {
+		opacity: 0.6;
+		border-radius: 0.3em;
+		width: 100%;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	div#line {
+		font-size: 10px;
+	}
+	#banner{
+	background-size: contain
+}
+}
+
+ul.actions li{
+	padding: 0;
+}
+
+div#find {
+	text-align: left;
+}
+
+div#find a {
+	font-size: 11px;
+	color: #ffffff !important;
+	text-decoration-line: none;
+	cursor: pointer;
+}
+
+span.sub {
+	font-size: 12px;
+}
+
+input#button {
+	width: 100%
+}
+
+div#line {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 0;
+}
+header h1.tv-title, header h1.movie-title{
+	position: absolute;
+}
+header h1.tv-title{
+	left: 250px !important;
+}
+header h1.movie-title{
+	left: 380px !important;
+}
+</style>
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<a href="home.html">WOTCH <span id="subtitle">오늘 뭐볼까?</span></a>
+		</h1>
+		<h1 class="tv-title"> <a href="home.html#one" class="scrolly">TV프로그램</a></h1>
+		<h1 class="movie-title"> <a href="home.html#movie" class="scrolly">영화</a></h1>
+		<a href="login.html">Log In</a> <a href="#menu">Menu</a>
+	</header>
+
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="home.html">메인 페이지</a></li>
+			<li><a href="home.html#one" class="scrolly">TV프로그램</a></li>
+			<li><a href="home.html#movie" class="scrolly">영화</a></li>
+		</ul>
+		<ul class="actions stacked">
+			<li><a href="login.html" class="button fit primary" id="login">로그인</a></li>
+			<li><a href="join.html" class="button fit" id="sign">회원가입</a></li>
+		</ul>
+	</nav>
+
+	<section id="banner">
+		<div class="inner">
+			<div id="wrap">
+				<h2>비밀번호 찾기</h2>
+				<form method="post" action="#">
+					<div class="row gtr-uniform">
+						<div class="col-12">
+							<label for="email">이메일로 찾기<br> <span class="sub">가입
+									시 등록한 이메일을 입력해주세요.</span>
+							</label> <input type="email" name="email" id="email" value=""
+								placeholder="abcd1234@gmail.com" />
+						</div>
+						<div id="line">
+							<br>───────────── OR ─────────────<br>
+						</div>
+						<div class="col-12">
+							<ul class="actions">
+								<label for="button">본인인증으로 찾기<br> <span class="sub">이미
+										본인인증이 완료된 계정에 한하여 아이디 찾기가 가능합니다.</span>
+										<li><a href="home.html" class="button primary" id="login">본인인증 하기</a></li>
+									</label>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
